@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="x_145744_insight_customer" relationship="" sys_domain="global" table="sys_user" version="2" view="insight">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="sys_user" element="NULL" name="sys_user" parent="x_145744_insight_customer" relationship="NULL" sys_domain="global" view="5d3fe5a60fe80300481d3a7ce1050e4c">705f61e60fe80300481d3a7ce1050ed9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>nino.g</sys_created_by>
+            <sys_created_on>2017-08-16 01:16:26</sys_created_on>
+            <sys_id>f45f61e60fe80300481d3a7ce1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nino.g</sys_updated_by>
+            <sys_updated_on>2017-08-16 01:16:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>email</element>
+            <list_id display_value="sys_user" element="NULL" name="sys_user" parent="x_145744_insight_customer" relationship="NULL" sys_domain="global" view="5d3fe5a60fe80300481d3a7ce1050e4c">705f61e60fe80300481d3a7ce1050ed9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>nino.g</sys_created_by>
+            <sys_created_on>2017-08-16 01:16:26</sys_created_on>
+            <sys_id>785f61e60fe80300481d3a7ce1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nino.g</sys_updated_by>
+            <sys_updated_on>2017-08-16 01:16:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>mobile_phone</element>
+            <list_id display_value="sys_user" element="NULL" name="sys_user" parent="x_145744_insight_customer" relationship="NULL" sys_domain="global" view="5d3fe5a60fe80300481d3a7ce1050e4c">705f61e60fe80300481d3a7ce1050ed9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>nino.g</sys_created_by>
+            <sys_created_on>2017-08-16 01:16:26</sys_created_on>
+            <sys_id>f85f61e60fe80300481d3a7ce1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nino.g</sys_updated_by>
+            <sys_updated_on>2017-08-16 01:16:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>phone</element>
+            <list_id display_value="sys_user" element="NULL" name="sys_user" parent="x_145744_insight_customer" relationship="NULL" sys_domain="global" view="5d3fe5a60fe80300481d3a7ce1050e4c">705f61e60fe80300481d3a7ce1050ed9</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>nino.g</sys_created_by>
+            <sys_created_on>2017-08-16 01:16:26</sys_created_on>
+            <sys_id>7c5f61e60fe80300481d3a7ce1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nino.g</sys_updated_by>
+            <sys_updated_on>2017-08-16 01:16:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_user</name>
+            <parent>x_145744_insight_customer</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>nino.g</sys_created_by>
+            <sys_created_on>2017-08-16 01:16:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>705f61e60fe80300481d3a7ce1050ed9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_user</sys_name>
+            <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+            <sys_update_name>sys_ui_list_sys_user_x_145744_insight_customer_insight</sys_update_name>
+            <sys_updated_by>nino.g</sys_updated_by>
+            <sys_updated_on>2017-08-16 01:16:26</sys_updated_on>
+            <sys_user/>
+            <view display_value="Insight" name="insight">5d3fe5a60fe80300481d3a7ce1050e4c</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

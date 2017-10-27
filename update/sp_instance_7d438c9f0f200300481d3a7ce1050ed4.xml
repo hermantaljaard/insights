@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">397dd7f20fe44300481d3a7ce1050e71</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>herman.t</sys_created_by>
+        <sys_created_on>2017-08-18 01:19:49</sys_created_on>
+        <sys_id>7d438c9f0f200300481d3a7ce1050ed4</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_instance_7d438c9f0f200300481d3a7ce1050ed4</sys_update_name>
+        <sys_updated_by>Herman.T</sys_updated_by>
+        <sys_updated_on>2017-08-23 00:03:45</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<div class=\"html_background\">\n<h1>Projects</h1>\n<p><span style=\"font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify;\">Our approach is to take clients on a journey, one step at a time. Each project we complete is another step on this journey, so click on the projects below to get more info on the steps taken so far!</span></p>\n</div>",
+		"displayValue": "<div class=\"html_background\">\n<h1>Projects</h1>\n<p><span style=\"font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify;\">Our approach is to take clients on a journey, one step at a time. Each project we complete is another step on this journey, so click on the projects below to get more info on the steps taken so far!</span></p>\n</div>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=7d438c9f0f200300481d3a7ce1050ed4"/>
+</record_update>

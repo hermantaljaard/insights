@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css>body { 
+    background-image: url('projects.jpg');
+    //background-color: #afd2ec;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	  color: #020202  
+}
+.panel-body,.panel{
+  background-color: rgba(239,240,240,0.4) !important;
+}
+.table-striped &gt; tbody &gt; tr:nth-of-type(odd) {
+    background-color: rgba(239,240,240,0.4) !important;
+}
+.panel-heading{
+background-color: rgba(239,240,240,0.6) !important;
+}
+.html_background {
+background-color: rgba(239,240,240,0.6);
+  border-radius:4px;
+  padding:10px;
+  margin-bottom:10px;
+}
+.th-title {
+  color: #020202 !important;
+}
+</css>
+        <draft>false</draft>
+        <id>projects</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description>Projects</short_description>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>mayank.p</sys_created_by>
+        <sys_created_on>2017-08-17 03:54:58</sys_created_on>
+        <sys_id>d92dd3f20fe44300481d3a7ce1050e30</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>projects</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_page_d92dd3f20fe44300481d3a7ce1050e30</sys_update_name>
+        <sys_updated_by>Herman.T</sys_updated_by>
+        <sys_updated_on>2017-08-23 02:00:10</sys_updated_on>
+        <title>Projects</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=d92dd3f20fe44300481d3a7ce1050e30"/>
+</record_update>

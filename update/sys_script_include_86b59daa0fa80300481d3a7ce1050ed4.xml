@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_145744_insight.Insight</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Insight</name>
+        <script><![CDATA[var Insight = Class.create();
+Insight.prototype = {
+	initialize: function() {
+	},
+		
+	getGroupMembers:function(param_groups) {
+		var gp = [];
+		var grp = new GlideRecord('sys_user_grmember');
+		grp.addQuery('group', param_groups);
+		grp.addQuery('user.active', true);
+		grp.query();
+		while(grp.next()) {
+			gp.push(grp.getValue('user'));
+		}
+		
+		return 'sys_idIN' + gp.join(',');
+	},
+
+	type: 'Insight'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>mayank.p</sys_created_by>
+        <sys_created_on>2017-08-15 23:24:59</sys_created_on>
+        <sys_id>86b59daa0fa80300481d3a7ce1050ed4</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>Insight</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sys_script_include_86b59daa0fa80300481d3a7ce1050ed4</sys_update_name>
+        <sys_updated_by>nino.g</sys_updated_by>
+        <sys_updated_on>2017-08-17 03:26:54</sys_updated_on>
+    </sys_script_include>
+</record_update>

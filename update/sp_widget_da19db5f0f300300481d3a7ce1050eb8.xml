@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope) {
+	/* widget controller */
+	var c = this;
+	alert($scope.data.loc_name);
+	
+	$scope.location = {
+				displayValue: $scope.data.loc_name,
+				value: $scope.data.loc_sys_id,
+				name: 'location'
+			};
+	
+	$scope.$on("field.change", function(evt, parms) {
+		if (parms.field.name == 'location')
+			c.data.location = parms.newValue;
+		
+		c.server.update().then(function(response) {
+			spUtil.update($scope);
+		})
+	});
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>Test Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	var logged_in_user = gs.getUserID();
+	var logged_in_user_gr = new GlideRecord('sys_user');
+	if(logged_in_user_gr.get(logged_in_user)){
+		data.location = logged_in_user_gr.getValue('location');
+		data.loc_sys_id = data.location;
+		data.loc_name = logged_in_user_gr.getDisplayValue('location');
+	}
+	
+	
+	if(input && input.location){
+		data.location = input.location;
+		var location = new GlideRecord('cmn_location');
+		location.addActiveQuery();
+		location.addQuery('sys_id',data.location);
+		location.query();
+		while(location.next()){
+			data.loc_sys_id = location.getUniqueValue();
+			data.loc_name = location.getDisplayValue('name');
+		}
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Subhash.U</sys_created_by>
+        <sys_created_on>2017-08-31 03:10:05</sys_created_on>
+        <sys_id>da19db5f0f300300481d3a7ce1050eb8</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Test Widget</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_widget_da19db5f0f300300481d3a7ce1050eb8</sys_update_name>
+        <sys_updated_by>Subhash.U</sys_updated_by>
+        <sys_updated_on>2017-09-12 06:29:46</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <sn-record-picker field="location" table="'cmn_location'" display-field="'name'" multiple="false" value-field="'sys_id'" search-fields="'name'" page-size="100" ></sn-record-picker>
+</div>]]></template>
+    </sp_widget>
+</record_update>

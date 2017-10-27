@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css>body { 
+    background-image: url('sn socks.jpg');
+    //background-color: #afd2ec;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+	  color: #020202  
+}
+.panel-body,.panel{
+  background-color: rgba(239,240,240,0.6) !important;
+}
+.table-striped &gt; tbody &gt; tr:nth-of-type(odd) {
+    background-color: rgba(239,240,240,0.6) !important;
+}
+.panel-heading{
+background-color: rgba(239,240,240,0.6) !important;
+}
+.html_background {
+background-color: rgba(239,240,240,0.8);
+  border-radius:4px;
+  padding:10px;
+  margin-bottom:10px;
+}
+.th-title {
+  color: #020202 !important;
+}
+</css>
+        <draft>false</draft>
+        <id>resources</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description>Projects</short_description>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>Herman.T</sys_created_by>
+        <sys_created_on>2017-08-23 00:53:20</sys_created_on>
+        <sys_id>722da5f80f300300481d3a7ce1050e42</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>resources</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_page_722da5f80f300300481d3a7ce1050e42</sys_update_name>
+        <sys_updated_by>Herman.T</sys_updated_by>
+        <sys_updated_on>2017-08-23 04:29:27</sys_updated_on>
+        <title>Resource Planning</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=722da5f80f300300481d3a7ce1050e42"/>
+</record_update>

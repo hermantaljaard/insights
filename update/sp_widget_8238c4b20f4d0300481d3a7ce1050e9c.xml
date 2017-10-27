@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope,$rootScope,spUtil) {
+	/* widget controller */
+	var c = this;
+	
+	var obj= {
+		start_date: $scope.data.sel_date,
+		end_date: $scope.data.sel_date,
+		projects: $scope.data.projects_sys_ids
+	};
+	$rootScope.$broadcast('updateDates', obj);
+	
+	c.dateFormat = $scope.data.dateFormat;
+	
+	if($scope.data.projects_sys_ids != ''){
+		$scope.projects = {
+		displayValue: $scope.data.projects_names,
+		value: $scope.data.projects_sys_ids,
+		name: 'projects'
+	};
+	}else{
+		$scope.projects = {
+		displayValue: '',
+		value: '',
+		name: 'projects'
+	};
+	}
+	
+	$scope.user = {
+		displayValue: $scope.data.sel_user_name,
+		value: $scope.data.sel_user,
+		name: 'user'
+	};
+	
+	$scope.$on("field.change", function(evt, parms) {
+		if (parms.field.name == 'projects'){
+			c.data.projects = parms.newValue;
+			c.start_date = $("#start_date").find("input").val();
+			c.end_date = $("#end_date").find("input").val();
+			updateData();
+		}
+		
+		c.server.update().then(function(response) {
+			spUtil.update($scope);
+		})
+	});
+	
+	
+	$('#start_date').datetimepicker({
+		format: c.dateFormat,
+			defaultDate: $scope.data.sel_date
+	});
+	$('#end_date').datetimepicker({
+		format: c.dateFormat,
+			defaultDate: $scope.data.sel_date,
+		minDate:$scope.data.sel_date,
+		useCurrent: false //Important! See issue #1075
+	});
+	$("#start_date").on("dp.change", function (e) {
+		c.start_date = $("#start_date").find("input").val();
+		c.end_date = $("#end_date").find("input").val();
+		updateData();
+		$("#end_date").find("input").val(c.start_date);
+		$('#end_date').data("DateTimePicker").minDate(e.date);
+	});
+	$("#end_date").on("dp.change", function (e) {
+		c.start_date = $("#start_date").find("input").val();
+		c.end_date = $("#end_date").find("input").val();
+		updateData();
+		$('#start_date').data("DateTimePicker").maxDate(e.date);
+	});
+	
+	function updateData(){
+		var obj= {
+			start_date: c.start_date,
+			end_date: c.end_date,
+			projects: c.data.projects
+		};
+		$rootScope.$broadcast('updateDates', obj);
+	}
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>Bootstrap Date Picker</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	data.dateFormat = (new global.DateUtils().getDateFormat()).toUpperCase();
+	data.dateFormat = data.dateFormat.replace('-','/');
+	data.sel_user = input.sel_user;
+	data.sel_date = input.sel_date;
+	data.projects_sys_ids = input.projects_sys_ids;
+	data.projects_names = input.projects_names;
+	var userGR = new GlideRecord('sys_user');
+	if(userGR.get(data.sel_user)){
+		data.sel_user_name = userGR.getDisplayValue('name');
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Subhash.U</sys_created_by>
+        <sys_created_on>2017-09-10 08:56:09</sys_created_on>
+        <sys_id>8238c4b20f4d0300481d3a7ce1050e9c</sys_id>
+        <sys_mod_count>73</sys_mod_count>
+        <sys_name>Bootstrap Date Picker</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_widget_8238c4b20f4d0300481d3a7ce1050e9c</sys_update_name>
+        <sys_updated_by>Subhash.U</sys_updated_by>
+        <sys_updated_on>2017-09-11 03:14:07</sys_updated_on>
+        <template><![CDATA[<div class="container">
+  <div class="row">
+    <div class='col-md-3'>
+        <div class="form-group">
+            <label>${Start}</label>
+            <div class='input-group date' id='start_date'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class='col-md-3'>
+        <div class="form-group">
+           <label>${End}</label>
+            <div class='input-group date' id='end_date'>
+                <input type='text' class="form-control" />
+                <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+   <div class="row">
+     <div class='col-md-3'>
+       <label>${User}</label>
+    <sn-record-picker field="user" table="'sys_user'" display-field="'name'" value-field="'sys_id'" search-fields="'name'" multiple="false" page-size="100" ></sn-record-picker>
+    </div>
+  </div>
+  
+  <div class="row">
+     <div class='col-md-3'>
+       <label>${Projects}</label>
+    <sn-record-picker field="projects" table="'x_145744_insight_project'" display-field="'short_description'" value-field="'sys_id'" search-fields="'short_description'" multiple="true" page-size="100" ></sn-record-picker>
+    </div>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

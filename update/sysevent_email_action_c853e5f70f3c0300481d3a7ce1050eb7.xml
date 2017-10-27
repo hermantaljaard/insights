@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>true</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>sales_opportunity</collection>
+        <condition table="sales_opportunity">stage=closed_won^EQ<item endquery="false" field="stage" goto="false" newquery="false" operator="=" or="false" value="closed_won"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <description/>
+        <event_name/>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p style="white-space: pre-line;">&nbsp;<img style="align: left;" title="" src="enable_scaled.pngx" alt="" width="200" align="left" border="" hspace="" vspace="" /></p>
+<p style="white-space: pre-line;">&nbsp;</p>
+<p style="white-space: pre-line;">&nbsp;</p>
+<p style="white-space: pre-line;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong><span style="color: #008cd0;">Enable Insights Update</span></strong></span></p>
+<p style="white-space: pre-line;"><span style="font-size: 12pt; color: gray; font-family: arial, helvetica, sans-serif;">A new opportunity has been closed by ${owner} on ${close_date}<br /><br /></span></p>
+<p style="white-space: pre-line;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong><span style="color: #008cd0;">Deal details:</span></strong></span></p>
+<p style="white-space: pre-line;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #808080;">Account: ${account}<br /></span></p>
+<p style="white-space: pre-line;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #808080;">City: ${account.city}<br /></span></p>
+<p style="white-space: pre-line;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #808080;">Short description: ${short_description}<br /></span></p>
+<p style="white-space: pre-line;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #808080;">Total value: ${total_value}</span></p>
+<p style="white-space: pre-line;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt; color: #808080;"><br /></span>&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>New deal alert</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups/>
+        <recipient_users>db33c4460f200300481d3a7ce1050ee4,610ffb0c0f7c0300481d3a7ce1050ef9,e10ffb0c0f7c0300481d3a7ce1050ef7</recipient_users>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Enable Insights update - new opportunity closed!</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>Herman.T</sys_created_by>
+        <sys_created_on>2017-09-01 07:54:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c853e5f70f3c0300481d3a7ce1050eb7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>New deal alert</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sysevent_email_action_c853e5f70f3c0300481d3a7ce1050eb7</sys_update_name>
+        <sys_updated_by>Herman.T</sys_updated_by>
+        <sys_updated_on>2017-09-01 08:12:52</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

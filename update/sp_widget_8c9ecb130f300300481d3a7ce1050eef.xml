@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope,$timeout,spUtil) {
+  /* widget controller */
+  var c = this;
+	
+	
+	if($scope.data.pre){
+			c.data.pre = $scope.data.pre;
+			c.data.table = $scope.data.table;
+		}else{
+			c.data.pre = 0;
+		}
+	if($scope.data.next){
+			c.data.next = $scope.data.next;
+		c.data.table = $scope.data.table;
+		}else{
+			c.data.next = 0;
+		}
+	
+	$scope.previousMonth = function(){
+		c.data.action = 'previous';
+		c.data.table = $scope.data.table;
+		c.data.pre += 1;
+		c.server.update();
+	}
+	
+		$scope.nextMonth = function(){
+		c.data.action = 'next';
+			c.data.table = $scope.data.table;
+		c.data.next += 1;
+		c.server.update();
+	}
+		$scope.setCurrentDate = function(){
+	//	c.data.action = 'current';
+			//c.data.table = $scope.data.table;
+		c.server.refresh();
+	}
+		
+  spUtil.recordWatch($scope, 'x_145744_insight_m2m_users_projects', '');
+	
+	$scope.location = {
+	displayValue: '',
+	value: '',
+	name: 'location'
+};
+ 
+$scope.$on("field.change", function(evt, parms) {
+	if (parms.field.name == 'location')
+		c.data.setLocation = parms.newValue;
+ 
+	c.server.update().then(function(response) {
+		spUtil.update($scope);
+	})
+});
+$scope.showEditor = function(cl){
+	$('.'+cl).find('.tooltiptext').css({'visibility':'visible'});
+}
+$('body').click(function(e){
+	
+	 if(!$(e.target).hasClass('tooltiptext') )
+   {
+     $('.tooltiptext').css({'visibility':'hidden'});            
+   }
+	
+});
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>th {
+    text-align: center;
+}
+.table &gt; thead &gt; tr &gt; th {
+    border-bottom:none;
+}
+.weekend{
+  background:#b3ffff;
+}
+.no-project{
+  background:#B0C4DE;
+}
+.resource-plan-table td,th{
+    white-space:nowrap;
+}
+.resource-plan-table th{
+    text-align:right;
+}
+.location-btn{
+  padding:0px;
+  border-radius:0px!important;
+  border:none;
+}
+.select2-container .select2-choice {
+    line-height: 28px;
+    border-radius: 3px;
+	}
+.btn-sm, .btn-group-sm &gt; .btn {
+    line-height: 1.7;
+}
+.select2-container .select2-choice abbr {
+    right: 35px;
+    top: 8px;
+}
+.select2-results li {
+    font-size: 0.9em!important;
+}
+
+/*.select2-choice{
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 139, 202);
+    border-color: rgb(53, 126, 189);
+}
+.select2-container .select2-choice .select2-arrow b {
+    background: none;
+}*/</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>Insight Resource Planner</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	
+	data.table = 'x_145744_insight_m2m_users_projects';
+	
+	
+	if(input){
+		data.pre = input.pre;
+		data.next = input.next;
+			
+	}
+
+	data.is_current_month = false;
+	data.today = new GlideDateTime();
+	data.this_month = data.today.getMonthLocalTime();
+	data.gdt = new GlideDateTime() || input.gdt;
+	data.gdt = (data.gdt).getLocalDate();
+	if(input && input.action == 'previous'){
+		data.gdt.addMonthsLocalTime('-'+data.pre);
+	}
+	else if(input && input.action == 'next'){
+		data.gdt.addMonthsLocalTime(data.next);
+	}else if(input && input.action == 'current'){
+		data.gdt = new GlideDateTime();
+	}
+
+	//Month Calculations
+	data.months = ["January", "February", "March", "April", "May", "June",
+	"July", "August", "September", "October", "November", "December"
+	];
+	data.weekdays = [" ", "Tue", "Wed", "Thu", "Fri","Sat","Sun","Mon"];
+	data.month = {};
+		data.month.num = data.gdt.getMonthLocalTime();
+		if(data.this_month == data.month.num){
+			data.is_current_month = true;
+		}
+		data.month.name = data.months[data.month.num-1];
+		data.month.total_days = data.gdt.getDaysInMonthLocalTime();
+		data.year = data.gdt.getYearLocalTime();
+		data.month.day = parseInt(data.gdt.getDayOfMonthLocalTime());
+		var dt = new GlideDateTime(data.gdt);
+		var today = parseInt('-'+data.month.day);
+		dt.addDaysLocalTime(today);
+		data.month.start = dt;
+		data.month.days = [];
+		getDaysOfMonth(data.month.days,data.month.total_days,dt);
+		data.users = [];
+
+		var resources = new GlideRecord('sys_user');
+		resources.setLimit(10);
+		resources.query();
+		while(resources.next()){
+			var user = {};
+				user.days = [];
+				user.name = resources.getDisplayValue('name');
+				user.location = resources.getDisplayValue('location');
+				user.sys_id = resources.getUniqueValue();
+				getDaysOfMonthUsers(user.days,data.month.total_days,user.sys_id);
+				data.users.push(user);
+			}
+			
+			//Locations
+			data.locations = [];
+			var locations = new GlideRecord('cmn_location');
+			locations.addActiveQuery();
+			locations.setLimit(5);
+			locations.query();
+			while(locations.next()){
+				var loc = {};
+					loc.sys_id = locations.getUniqueValue();
+					loc.display_value = locations.getDisplayValue('name');
+					data.locations.push(loc);
+				}
+				
+			})();
+			
+			function getDaysOfMonth(arr,totalDaysInMonth){
+				var newGdtObject = new GlideDateTime(data.month.start);
+				for(var i = 1;i <= totalDaysInMonth;i++){
+					var day = {};
+						day.day_num = parseInt(i);
+						if(i == 1)
+							day.date = newGdtObject;
+						else{
+							newGdtObject.addDaysLocalTime(1)
+							day.date = newGdtObject;
+						}
+					  //day.date.addSeconds(120);
+						day.week_day_num = day.date.getDayOfWeekLocalTime();
+					  day.week_day_num = parseInt(day.week_day_num);
+						day.week_day_name = data.weekdays[parseInt(day.week_day_num)];
+						if(day.week_day_name == 'Sat' || day.week_day_name == 'Sun'){
+							day.is_weekend = true;
+							
+						}
+						else{
+							day.is_weekend = false;
+						}
+						arr.push(day);
+					}
+				}
+				
+				function getDaysOfMonthUsers(arr,totalDaysInMonth,sys_id){
+					var newGdtUserObject = new GlideDateTime(data.month.start);
+					//gs.addInfoMessage(newGdtUserObject);
+					for(var i = 1;i <= totalDaysInMonth;i++){
+						
+						var day = {};
+							day.day_num = parseInt(i);
+							if(i == 1)
+							day.date = newGdtUserObject;
+						else{
+							newGdtUserObject.addDaysLocalTime(1)
+							day.date = newGdtUserObject;
+						}
+						day.user = sys_id;
+						day.class_name = day.date.getDate()+'-'+day.user;
+						day.projects_sys_ids = [];
+						day.projects_names = [];
+							var projects = new GlideRecord(data.table);
+							projects.addQuery('user',sys_id);
+							projects.query();
+							while(projects.next()){
+								
+								var current_date = new GlideDateTime(day.date);
+								var start_date = new GlideDateTime(projects.getValue('start_date'));
+								var end_date = new GlideDateTime(projects.getValue('end_date'));
+								if(current_date.onOrAfter(start_date) && current_date.onOrBefore(end_date)){
+									day.projects_sys_ids.push(projects.getValue('projects'));
+									day.projects_names.push(projects.getDisplayValue('projects'));
+									/*var prj = {};
+										prj.sys_id = projects.getValue('projects');
+										prj.name = projects.getDisplayValue('projects');
+										prj.user = sys_id;
+										day.projects.push(prj);*/
+									}
+								
+								}
+						day.projects_names = day.projects_names.toString();
+							if(day.projects_names == ''){
+										day.no_project = true;
+										day.projects_names = '  ';
+									}else
+									day.no_project = false;
+								
+								day.week_day_num = day.date.getDayOfWeekLocalTime();
+								day.week_day_num = parseInt(day.week_day_num);
+								day.week_day_name = data.weekdays[parseInt(day.week_day_num)];
+								if(day.week_day_name == 'Sat' || day.week_day_name == 'Sun'){
+									day.is_weekend = true;
+
+								}
+								else{
+									day.is_weekend = false;
+								}
+								arr.push(day);
+							}
+						}]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Subhash.U</sys_created_by>
+        <sys_created_on>2017-08-31 02:24:55</sys_created_on>
+        <sys_id>8c9ecb130f300300481d3a7ce1050eef</sys_id>
+        <sys_mod_count>351</sys_mod_count>
+        <sys_name>Insight Resource Planner</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_widget_8c9ecb130f300300481d3a7ce1050eef</sys_update_name>
+        <sys_updated_by>Subhash.U</sys_updated_by>
+        <sys_updated_on>2017-09-09 03:22:59</sys_updated_on>
+        <template><![CDATA[<div class="table-responsive">
+  
+  <table class="table">
+		<thead>
+			<tr>
+				<th>
+					<div class="btn-group btn-group-sm">
+						<button class="btn btn-default" ng-click="previousMonth();" type="button">
+							<em class="glyphicon glyphicon glyphicon-triangle-left"></em>
+						</button> 
+						<button class="btn btn-default" ng-click="nextMonth();" type="button">
+							<em class="glyphicon glyphicon glyphicon-triangle-right"></em>
+						</button> 
+						<button type="button" ng-class="{'active':data.is_current_month}" ng-disabled="data.is_current_month" ng-click="setCurrentDate();" class="btn btn-default btn-sm">
+							${This Month}
+						</button>
+            <button type="button" ng-click="setCurrentDate();" class="btn btn-default btn-sm location-btn">
+							<sn-record-picker field="location" table="'cmn_location'" display-field="'name'" value-field="'sys_id'" search-fields="'name'" page-size="100" ></sn-record-picker>
+						</button>
+					</div>
+				</th>
+				<th><h3 class="text-center text-primary">
+						{{data.month.name}} - {{data.year}}
+					</h3></th>
+				<th>			
+
+					<div class="btn-group btn-group-sm">
+						<button class="btn btn-default" type="button">
+							${Month}
+						</button> 
+						<button class="btn btn-default" type="button">
+							${Week}
+						</button> 
+					</div>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+  </div>
+  <div>
+	<div class="resource-plan-table">
+		<div class="table-responsive">
+			<div id="scroller">          
+				
+				<div>
+				<table class="table table-bordered table-hover resource-plan-table">
+					<thead>
+						<tr>
+							<th>${Enabler}</th>
+							<th><strong>${Location}</strong>
+                <!--sn-record-picker field="location" table="'cmn_location'" multiple="true" display-field="'name'" value-field="'sys_id'" search-fields="'name'" page-size="100" ></sn-record-picker-->
+							</th>
+							<th ng-repeat="day in data.month.days" ng-class="{'weekend': day.is_weekend == true}"><div><strong>{{day.day_num}}</strong></div><div><small>{{day.week_day_name}}</small></div></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat = "user in data.users">
+							<th class="headcol">{{user.name}}</th>
+							<td>{{user.location}}</td>
+              <td class="{{d.class_name}}" ng-dblclick="showEditor(d.class_name)" ng-repeat="d in user.days" data-mon-date="{{d.date}}" data-sys_id="{{d.user}}" data-week-day="{{d.week_day_name}}" ng-disabled="d.is_weekend" ng-class="{'weekend': d.is_weekend,'tooltipcust': !d.is_weekend,'no-project': d.no_project && !d.is_weekend}">
+                <small ng-if="d.no_project">&nbsp;</small>
+                <small ng-if="!d.is_weekend">{{d.projects_names}}</small>
+              </td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+			</div>
+		</div>
+    
+    <!--------------Location buttons---------------->
+		<!--div class="btn-group btn-group-sm">
+			<button ng-repeat="loc in data.locations" type="button" class="btn btn-primary">{{loc.display_value}}</button>
+		</div-->
+	</div>
+	</div>]]></template>
+    </sp_widget>
+</record_update>

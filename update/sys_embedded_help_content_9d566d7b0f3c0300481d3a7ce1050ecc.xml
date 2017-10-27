@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>email-notifications</category>
+        <content><![CDATA[  <h1 class="title topictitle1">Notifications</h1>    <div class="body conbody">    <p class="p">Notifications keep users informed of events that concern them. Users can subscribe to      notifications of interest or unsubscribe from notifications that they do not want with the      subscription-based notifications feature. Notifications are sent when a record is inserted      and/or updated into the table.</p>    <p class="p">The subscription-based notifications feature enables users to subscribe to notifications of      interest or unsubscribe from notifications that they do not want. This feature also enables      administrators to send mandatory notifications that users cannot block. A separate interface      enables you to select the devices and service providers for SMS notifications.</p>  </div>  <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Email-Unsubscribe&amp;version&#61;jakarta" target="_blank" rel="nofollow">Subscription-based notifications</a></div><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:Push-Notification&amp;version&#61;jakarta" target="_blank" rel="nofollow">Push notifications</a></div></div></div></div>]]></content>
+        <last_sync>2017-10-19 03:55:26</last_sync>
+        <modifier>setup</modifier>
+        <name>sysevent_email_action_list-setup</name>
+        <page>sysevent_email_action_list</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2017-09-01 08:05:15</sys_created_on>
+        <sys_id>9d566d7b0f3c0300481d3a7ce1050ecc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>sysevent_email_action_list-setup</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sys_embedded_help_content_9d566d7b0f3c0300481d3a7ce1050ecc</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-10-19 03:55:26</sys_updated_on>
+        <version>j</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=9d566d7b0f3c0300481d3a7ce1050ecc"/>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_column">
+    <sp_column action="INSERT_OR_UPDATE">
+        <class_name/>
+        <order>2</order>
+        <size>3</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">aae1477e0f644300481d3a7ce1050e48</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>herman.t</sys_created_by>
+        <sys_created_on>2017-08-17 01:55:46</sys_created_on>
+        <sys_id>26e1477e0f644300481d3a7ce1050e4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>2</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_column_26e1477e0f644300481d3a7ce1050e4b</sys_update_name>
+        <sys_updated_by>herman.t</sys_updated_by>
+        <sys_updated_on>2017-08-17 01:55:46</sys_updated_on>
+    </sp_column>
+</record_update>

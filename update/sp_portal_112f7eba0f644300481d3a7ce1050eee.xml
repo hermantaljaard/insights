@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables>$brand-primary: #0064b0;
+$body-bg: #fff;
+$state-success-text: #5cb85c;
+$sp-homepage-bg: #fff;
+$sp-navbar-divider-color: #fc8a3d;
+$text-color: #485563;
+$sp-logo-margin-y: 2px;
+$navbar-inverse-link-hover-color: #bdc0c4;
+$panel-bg: #fff;
+$brand-success: #ff9900;
+$navbar-inverse-bg: #0064b0;
+$brand-warning: #d9534f;
+$brand-danger: #d9534f;
+$sp-tagline-color: #000000;
+$navbar-inverse-link-color: #ffffff;
+$brand-info: #1b144e;
+$link-color: #428bca;
+$sp-logo-margin-x: 4px;
+$btn-default-bg: #fff;
+$text-muted: #979797;
+</css_variables>
+        <default>false</default>
+        <homepage display_value="insight_home">518fb2fa0f644300481d3a7ce1050e6b</homepage>
+        <icon/>
+        <kb_knowledge_base display_value="Insights">65b496d20f640300481d3a7ce1050eeb</kb_knowledge_base>
+        <kb_knowledge_page display_value="knowledge">d864633a0fe44300481d3a7ce1050e87</kb_knowledge_page>
+        <login_page display_value="login">6995a144cb11120000f8d856634c9c25</login_page>
+        <logo>19ce97360fe44300481d3a7ce1050e8e.iix?t=m</logo>
+        <notfound_page/>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="Insights Menu">d061477e0f644300481d3a7ce1050eda</sp_rectangle_menu>
+        <sqanda_knowledge_base display_value="Insights">65b496d20f640300481d3a7ce1050eeb</sqanda_knowledge_base>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>mayank.p</sys_created_by>
+        <sys_created_on>2017-08-17 01:43:51</sys_created_on>
+        <sys_id>112f7eba0f644300481d3a7ce1050eee</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Enable Insights</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_portal_112f7eba0f644300481d3a7ce1050eee</sys_update_name>
+        <sys_updated_by>Subhash.U</sys_updated_by>
+        <sys_updated_on>2017-09-13 00:45:08</sys_updated_on>
+        <theme display_value="Insight">d8218b3e0f644300481d3a7ce1050edd</theme>
+        <title>Enable Insights</title>
+        <url_suffix>insights</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=112f7eba0f644300481d3a7ce1050eee"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>logo</file_name>
+        <image_height>50</image_height>
+        <image_width>118</image_width>
+        <size_bytes>1726</size_bytes>
+        <size_compressed>1749</size_compressed>
+        <sys_created_by>herman.t</sys_created_by>
+        <sys_created_on>2017-08-17 04:02:45</sys_created_on>
+        <sys_id>7efe9b360fe44300481d3a7ce1050e6f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>herman.t</sys_updated_by>
+        <sys_updated_on>2017-08-17 04:02:45</sys_updated_on>
+        <table_name>ZZ_YYsp_portal</table_name>
+        <table_sys_id>112f7eba0f644300481d3a7ce1050eee</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="7efe9b360fe44300481d3a7ce1050e6f">7efe9b360fe44300481d3a7ce1050e6f</sys_attachment>
+        <sys_created_by>herman.t</sys_created_by>
+        <sys_created_on>2017-08-17 04:02:45</sys_created_on>
+        <sys_id>befe9b360fe44300481d3a7ce1050e6f</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2320</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="7efe9b360fe44300481d3a7ce1050e6f">7efe9b360fe44300481d3a7ce1050e6f</sys_attachment>
+        <sys_created_by>herman.t</sys_created_by>
+        <sys_created_on>2017-08-17 04:02:45</sys_created_on>
+        <sys_id>32fe9b360fe44300481d3a7ce1050e70</sys_id>
+    </sys_attachment_doc>
+</record_update>

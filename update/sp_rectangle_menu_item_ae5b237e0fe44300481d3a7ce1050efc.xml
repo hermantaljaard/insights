@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>empty</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>HOME</label>
+        <order>50</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="insight_home">518fb2fa0f644300481d3a7ce1050e6b</sp_page>
+        <sp_rectangle_menu display_value="Insights Menu">d061477e0f644300481d3a7ce1050eda</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>mayank.p</sys_created_by>
+        <sys_created_on>2017-08-17 04:57:07</sys_created_on>
+        <sys_id>ae5b237e0fe44300481d3a7ce1050efc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>HOME</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_ae5b237e0fe44300481d3a7ce1050efc</sys_update_name>
+        <sys_updated_by>Subhash.U</sys_updated_by>
+        <sys_updated_on>2017-09-13 00:51:19</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=ae5b237e0fe44300481d3a7ce1050efc"/>
+</record_update>

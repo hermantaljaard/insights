@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>@font-face {&#13;
+    font-family: 'Glyphicons Halflings';&#13;
+    src: url('../fonts/glyphicons-halflings-regular.eot');&#13;
+    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');&#13;
+}&#13;
+&#13;
+.glyphicon {&#13;
+    position: relative;&#13;
+    top: 1px;&#13;
+    display: inline-block;&#13;
+    font-family: 'Glyphicons Halflings';&#13;
+    font-style: normal;&#13;
+    font-weight: normal;&#13;
+    line-height: 1;&#13;
+    -webkit-font-smoothing: antialiased;&#13;
+    -moz-osx-font-smoothing: grayscale;&#13;
+}&#13;
+&#13;
+.glyphicon-time:before {&#13;
+    content: "\e023";&#13;
+}&#13;
+&#13;
+.glyphicon-chevron-left:before {&#13;
+    content: "\e079";&#13;
+}&#13;
+&#13;
+.glyphicon-chevron-right:before {&#13;
+    content: "\e080";&#13;
+}&#13;
+&#13;
+.glyphicon-chevron-up:before {&#13;
+    content: "\e113";&#13;
+}&#13;
+&#13;
+.glyphicon-chevron-down:before {&#13;
+    content: "\e114";&#13;
+}&#13;
+&#13;
+.glyphicon-calendar:before {&#13;
+    content: "\e109";&#13;
+}&#13;
+&#13;
+.btn {&#13;
+    display: inline-block;&#13;
+    padding: 6px 12px;&#13;
+    margin-bottom: 0;&#13;
+    font-size: 14px;&#13;
+    font-weight: normal;&#13;
+    line-height: 1.42857143;&#13;
+    text-align: center;&#13;
+    white-space: nowrap;&#13;
+    vertical-align: middle;&#13;
+    -ms-touch-action: manipulation;&#13;
+    touch-action: manipulation;&#13;
+    cursor: pointer;&#13;
+    -webkit-user-select: none;&#13;
+    -moz-user-select: none;&#13;
+    -ms-user-select: none;&#13;
+    user-select: none;&#13;
+    background-image: none;&#13;
+    border: 1px solid transparent;&#13;
+    border-radius: 4px;&#13;
+}&#13;
+&#13;
+.collapse {&#13;
+    display: none;&#13;
+}&#13;
+&#13;
+    .collapse.in {&#13;
+        display: block;&#13;
+    }&#13;
+&#13;
+.dropdown-menu {&#13;
+    position: absolute;&#13;
+    left: 0;&#13;
+    z-index: 1000;&#13;
+    display: none;&#13;
+    float: left;&#13;
+    min-width: 160px;&#13;
+    padding: 5px 0;&#13;
+    margin: 2px 0 0;&#13;
+    font-size: 14px;&#13;
+    text-align: left;&#13;
+    list-style: none;&#13;
+    background-color: #fff;&#13;
+    -webkit-background-clip: padding-box;&#13;
+    background-clip: padding-box;&#13;
+    border: 1px solid #ccc;&#13;
+    border: 1px solid rgba(0, 0, 0, .15);&#13;
+    border-radius: 4px;&#13;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);&#13;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);&#13;
+}&#13;
+&#13;
+.list-unstyled {&#13;
+    padding-left: 0;&#13;
+    list-style: none;&#13;
+}&#13;
+</css>
+        <name>bootstrap-datetimepicker-standalone</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>Subhash.U</sys_created_by>
+        <sys_created_on>2017-09-10 04:28:54</sys_created_on>
+        <sys_id>791b43e60fc90300481d3a7ce1050ec5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>bootstrap-datetimepicker-standalone</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_css_791b43e60fc90300481d3a7ce1050ec5</sys_update_name>
+        <sys_updated_by>Subhash.U</sys_updated_by>
+        <sys_updated_on>2017-09-10 04:28:54</sys_updated_on>
+    </sp_css>
+</record_update>

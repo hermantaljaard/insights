@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="75fd10ac0fb44300481d3a7ce1050ef5" sys_domain="global" table="x_145744_insight_m2m_users_projects" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>projects</element>
+            <position>0</position>
+            <sys_created_by>Subhash.U</sys_created_by>
+            <sys_created_on>2017-09-10 01:08:18</sys_created_on>
+            <sys_id>153d5ea20f890300481d3a7ce1050ee7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_145744_insight_m2m_users_projects" sys_domain="global" view="Default view">75fd10ac0fb44300481d3a7ce1050ef5</sys_ui_section>
+            <sys_updated_by>Subhash.U</sys_updated_by>
+            <sys_updated_on>2017-09-10 01:08:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <position>1</position>
+            <sys_created_by>Subhash.U</sys_created_by>
+            <sys_created_on>2017-09-10 01:08:18</sys_created_on>
+            <sys_id>953d5ea20f890300481d3a7ce1050ee7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_145744_insight_m2m_users_projects" sys_domain="global" view="Default view">75fd10ac0fb44300481d3a7ce1050ef5</sys_ui_section>
+            <sys_updated_by>Subhash.U</sys_updated_by>
+            <sys_updated_on>2017-09-10 01:08:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>Subhash.U</sys_created_by>
+            <sys_created_on>2017-09-10 01:08:18</sys_created_on>
+            <sys_id>193d5ea20f890300481d3a7ce1050ee7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_145744_insight_m2m_users_projects" sys_domain="global" view="Default view">75fd10ac0fb44300481d3a7ce1050ef5</sys_ui_section>
+            <sys_updated_by>Subhash.U</sys_updated_by>
+            <sys_updated_on>2017-09-10 01:08:18</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>start_date</element>
+            <position>3</position>
+            <sys_created_by>Subhash.U</sys_created_by>
+            <sys_created_on>2017-09-10 01:08:18</sys_created_on>
+            <sys_id>993d5ea20f890300481d3a7ce1050ee7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_145744_insight_m2m_users_projects" sys_domain="global" view="Default view">75fd10ac0fb44300481d3a7ce1050ef5</sys_ui_section>
+            <sys_updated_by>Subhash.U</sys_updated_by>
+            <sys_updated_on>2017-09-10 01:08:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>end_date</element>
+            <position>4</position>
+            <sys_created_by>Subhash.U</sys_created_by>
+            <sys_created_on>2017-09-10 01:08:18</sys_created_on>
+            <sys_id>1d3d5ea20f890300481d3a7ce1050ee7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_145744_insight_m2m_users_projects" sys_domain="global" view="Default view">75fd10ac0fb44300481d3a7ce1050ef5</sys_ui_section>
+            <sys_updated_by>Subhash.U</sys_updated_by>
+            <sys_updated_on>2017-09-10 01:08:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>5</position>
+            <sys_created_by>Subhash.U</sys_created_by>
+            <sys_created_on>2017-09-10 01:08:18</sys_created_on>
+            <sys_id>9d3d5ea20f890300481d3a7ce1050ee7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_145744_insight_m2m_users_projects" sys_domain="global" view="Default view">75fd10ac0fb44300481d3a7ce1050ef5</sys_ui_section>
+            <sys_updated_by>Subhash.U</sys_updated_by>
+            <sys_updated_on>2017-09-10 01:08:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>6</position>
+            <sys_created_by>Subhash.U</sys_created_by>
+            <sys_created_on>2017-09-10 01:08:18</sys_created_on>
+            <sys_id>113d5ea20f890300481d3a7ce1050ee8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_145744_insight_m2m_users_projects" sys_domain="global" view="Default view">75fd10ac0fb44300481d3a7ce1050ef5</sys_ui_section>
+            <sys_updated_by>Subhash.U</sys_updated_by>
+            <sys_updated_on>2017-09-10 01:08:18</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dates</element>
+            <position>7</position>
+            <sys_created_by>Subhash.U</sys_created_by>
+            <sys_created_on>2017-09-10 01:08:18</sys_created_on>
+            <sys_id>913d5ea20f890300481d3a7ce1050ee8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_145744_insight_m2m_users_projects" sys_domain="global" view="Default view">75fd10ac0fb44300481d3a7ce1050ef5</sys_ui_section>
+            <sys_updated_by>Subhash.U</sys_updated_by>
+            <sys_updated_on>2017-09-10 01:08:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_145744_insight_m2m_users_projects</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Nino.G</sys_created_by>
+            <sys_created_on>2017-08-22 00:28:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>75fd10ac0fb44300481d3a7ce1050ef5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_145744_insight_m2m_users_projects</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+            <sys_update_name>sys_ui_section_75fd10ac0fb44300481d3a7ce1050ef5</sys_update_name>
+            <sys_updated_by>Nino.G</sys_updated_by>
+            <sys_updated_on>2017-08-22 00:28:49</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

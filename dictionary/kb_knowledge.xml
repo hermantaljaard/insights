@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="document_viewer_audit=all,global_search_config_handler=KnowledgeArticle,all_tables.text_index_translations=true,attachment_index=true,text_index_attachment_displayed=true,text_index_enable_idf=true,synch_attachments=true,use_document_viewer=true,text_index_filter_junk=false" audit="true" label="Knowledge" max_length="40" name="kb_knowledge" text_index="true" type="collection">
+        <element label="Account" max_length="32" name="x_145744_insight_account" reference="sales_account" reference_cascade_rule="restrict" reference_floats="true" type="reference"/>
+        <element dependent="x_145744_insight_account" dependent_on_field="x_145744_insight_account" label="Project" max_length="32" name="x_145744_insight_project" reference="x_145744_insight_project" reference_cascade_rule="restrict" type="reference" use_dependent_field="true"/>
+        <index name="index">
+            <element name="x_145744_insight_project"/>
+        </index>
+        <index name="index2">
+            <element name="x_145744_insight_account"/>
+        </index>
+    </element>
+</database>

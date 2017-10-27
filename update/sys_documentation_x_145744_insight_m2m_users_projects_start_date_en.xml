@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="start_date" label="Start Date" language="en" table="x_145744_insight_m2m_users_projects">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>start_date</element>
+            <help/>
+            <hint/>
+            <label>Start Date</label>
+            <language>en</language>
+            <name>x_145744_insight_m2m_users_projects</name>
+            <plural>Start Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Nino.G</sys_created_by>
+            <sys_created_on>2017-08-22 01:36:05</sys_created_on>
+            <sys_id>c75d24e40ff44300481d3a7ce1050e42</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Start Date</sys_name>
+            <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+            <sys_update_name>sys_documentation_x_145744_insight_m2m_users_projects_start_date_en</sys_update_name>
+            <sys_updated_by>Nino.G</sys_updated_by>
+            <sys_updated_on>2017-08-22 01:36:05</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

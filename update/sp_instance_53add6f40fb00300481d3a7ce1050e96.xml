@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">4bdddef40fb00300481d3a7ce1050ebf</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Herman.T</sys_created_by>
+        <sys_created_on>2017-08-23 04:25:16</sys_created_on>
+        <sys_id>53add6f40fb00300481d3a7ce1050e96</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_instance_53add6f40fb00300481d3a7ce1050e96</sys_update_name>
+        <sys_updated_by>Herman.T</sys_updated_by>
+        <sys_updated_on>2017-08-23 04:27:45</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h1 style=\"box-sizing: border-box; font-size: 36px; margin: 20px 0px 10px; font-family: SourceSansPro, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.1; color: white;\">Knowledge Base</h1>\n<p style=\"box-sizing: border-box; margin: 0px 0px 10px; color: white; font-family: SourceSansPro, Helvetica, Arial, sans-serif; font-size: 14px;\"><span style=\"box-sizing: border-box; font-family: 'Open Sans', Arial, sans-serif; text-align: justify;\">This is a source of information about our clients, projects and our team.</span></p>",
+		"displayValue": "<h1 style=\"box-sizing: border-box; font-size: 36px; margin: 20px 0px 10px; font-family: SourceSansPro, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.1; color: white;\">Knowledge Base</h1>\n<p style=\"box-sizing: border-box; margin: 0px 0px 10px; color: white; font-family: SourceSansPro, Helvetica, Arial, sans-serif; font-size: 14px;\"><span style=\"box-sizing: border-box; font-family: 'Open Sans', Arial, sans-serif; text-align: justify;\">This is a source of information about our clients, projects and our team.</span></p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=53add6f40fb00300481d3a7ce1050e96"/>
+</record_update>

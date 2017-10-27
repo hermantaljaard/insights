@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">87ecb6c90f300300481d3a7ce1050ef8</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Herman.T</sys_created_by>
+        <sys_created_on>2017-08-23 00:53:20</sys_created_on>
+        <sys_id>f62da5f80f300300481d3a7ce1050e48</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_instance_f62da5f80f300300481d3a7ce1050e48</sys_update_name>
+        <sys_updated_by>Subhash.U</sys_updated_by>
+        <sys_updated_on>2017-09-11 01:32:42</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<div class=\"html_background\">\n<h1>Resource&nbsp;Allocation</h1>\n<p><span style=\"font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify;\">Resource allocation and utilisation planning</span></p>\n</div>",
+		"displayValue": "<div class=\"html_background\">\n<h1>Resource&nbsp;Allocation</h1>\n<p><span style=\"font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; text-align: justify;\">Resource allocation and utilisation planning</span></p>\n</div>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=f62da5f80f300300481d3a7ce1050e48"/>
+</record_update>

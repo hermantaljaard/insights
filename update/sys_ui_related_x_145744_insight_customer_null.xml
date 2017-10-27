@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_145744_insight_customer" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Customer - Default view" name="x_145744_insight_customer" related_list="NULL" sys_domain="global" view="Default view">c6eea1e60fe80300481d3a7ce1050ec8</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_145744_insight_project.client_name</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>nino.g</sys_created_by>
+            <sys_created_on>2017-08-16 01:14:36</sys_created_on>
+            <sys_id>06eea1e60fe80300481d3a7ce1050ec9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nino.g</sys_updated_by>
+            <sys_updated_on>2017-08-16 01:14:36</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Customer - Default view" name="x_145744_insight_customer" related_list="NULL" sys_domain="global" view="Default view">c6eea1e60fe80300481d3a7ce1050ec8</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>sys_user.x_145744_insight_client_name</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>nino.g</sys_created_by>
+            <sys_created_on>2017-08-16 01:14:36</sys_created_on>
+            <sys_id>4eeea1e60fe80300481d3a7ce1050ec9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nino.g</sys_updated_by>
+            <sys_updated_on>2017-08-16 01:14:36</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Customer - Default view" name="x_145744_insight_customer" related_list="NULL" sys_domain="global" view="Default view">c6eea1e60fe80300481d3a7ce1050ec8</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>kb_knowledge.x_145744_insight_client_name</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>nino.g</sys_created_by>
+            <sys_created_on>2017-08-16 01:14:36</sys_created_on>
+            <sys_id>42eea1e60fe80300481d3a7ce1050eca</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>nino.g</sys_updated_by>
+            <sys_updated_on>2017-08-16 01:14:36</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Customer - Default view</calculated_name>
+            <filter/>
+            <name>x_145744_insight_customer</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>nino.g</sys_created_by>
+            <sys_created_on>2017-08-16 01:14:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c6eea1e60fe80300481d3a7ce1050ec8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Customer - Default view</sys_name>
+            <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+            <sys_update_name>sys_ui_related_x_145744_insight_customer_null</sys_update_name>
+            <sys_updated_by>nino.g</sys_updated_by>
+            <sys_updated_on>2017-08-16 01:14:36</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

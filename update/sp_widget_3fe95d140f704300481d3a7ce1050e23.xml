@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope,$timeout) {
+	/* widget controller */
+	var c = this;
+	$timeout(function() {
+		//var bc = [{label: $scope.page.title, url: '#'}];
+			$scope.$emit('sp.update.breadcrumbs', $scope.data.breadcrumbs);
+		});
+	}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link/>
+        <name>Update Breadcrumbs</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	
+	data.table = $sp.getParameter('table');
+	if(!data.table || data.table == undefined)
+		return;
+	data.id = $sp.getParameter('id');
+	data.sys_id = $sp.getParameter('sys_id');
+	var gr = new GlideRecord(data.table);
+	gr.initialize();
+	var table_name = gr.getClassDisplayValue();
+	var title = '';
+	var id = '';
+	if(data.table == 'sales_account'){
+		id = 'account';
+	}else if(data.table == 'x_145744_insight_project'){
+		id = 'account';
+	}else if(data.table == 'sys_user'){
+		id = 'teams';
+	}
+	data.breadcrumbs = [];
+	var page_gr = new GlideRecord('sp_page');
+		page_gr.addQuery('id',id);
+		page_gr.query();
+		if(page_gr.next()){
+			title = page_gr.getValue('title');
+			var breadcrumb = {};
+			breadcrumb.label = title;
+			breadcrumb.url = "?id="+id;
+			data.breadcrumbs.push(breadcrumb);
+			var breadcrumb = {};
+			breadcrumb.label = table_name;
+			breadcrumb.url = "#";
+			data.breadcrumbs.push(breadcrumb);
+		}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>subhash.u</sys_created_by>
+        <sys_created_on>2017-08-21 10:13:25</sys_created_on>
+        <sys_id>3fe95d140f704300481d3a7ce1050e23</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Update Breadcrumbs</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_widget_3fe95d140f704300481d3a7ce1050e23</sys_update_name>
+        <sys_updated_by>subhash.u</sys_updated_by>
+        <sys_updated_on>2017-08-21 11:20:13</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+</div>]]></template>
+    </sp_widget>
+</record_update>

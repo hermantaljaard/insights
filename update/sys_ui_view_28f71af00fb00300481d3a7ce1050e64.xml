@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sys_popup,insight</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>Nino.G</sys_created_by>
+        <sys_created_on>2017-08-23 04:00:14</sys_created_on>
+        <sys_id>28f71af00fb00300481d3a7ce1050e64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sys_popup,insight</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sys_ui_view_28f71af00fb00300481d3a7ce1050e64</sys_update_name>
+        <sys_updated_by>Nino.G</sys_updated_by>
+        <sys_updated_on>2017-08-23 04:00:14</sys_updated_on>
+        <title>Sys_popup,insight</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

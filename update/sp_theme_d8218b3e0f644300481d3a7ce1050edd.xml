@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables/>
+        <footer/>
+        <footer_fixed>true</footer_fixed>
+        <header display_value="Insight Header">e2551b0c0ff80300481d3a7ce1050ef8</header>
+        <name>Insight</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>mayank.p</sys_created_by>
+        <sys_created_on>2017-08-17 01:52:45</sys_created_on>
+        <sys_id>d8218b3e0f644300481d3a7ce1050edd</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Insight</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_theme_d8218b3e0f644300481d3a7ce1050edd</sys_update_name>
+        <sys_updated_by>subhash.u</sys_updated_by>
+        <sys_updated_on>2017-08-21 01:51:14</sys_updated_on>
+    </sp_theme>
+</record_update>

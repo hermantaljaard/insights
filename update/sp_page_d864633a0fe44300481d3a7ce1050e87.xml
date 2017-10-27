@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <css>body { 
+    background-image: url('knowledge.jpg');
+    background-color: #afd2ec;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #020202 !important;
+}
+.color_box{
+   box-shadow: 5px 5px 20px #B8B8B8;
+}
+.color_box:hover{
+   box-shadow: 5px 5px 20px #606060;
+}
+.panel-body,.panel{
+  background-color: rgba(239,240,240,0.4) !important;
+}
+.table-striped &gt; tbody &gt; tr:nth-of-type(odd) {
+    background-color: rgba(239,240,240,0.4) !important;
+}
+.panel-heading{
+background-color: rgba(239,240,240,0.8) !important;
+}
+.html_background {
+  background-color: rgba(239,240,240,0.4);
+  border-radius:4px;
+  padding:15px;
+  margin-bottom:10px;
+}
+.th-title {
+  color: #020202 !important;
+}</css>
+        <draft>false</draft>
+        <id>knowledge</id>
+        <internal>false</internal>
+        <public>false</public>
+        <roles/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>mayank.p</sys_created_by>
+        <sys_created_on>2017-08-17 04:26:35</sys_created_on>
+        <sys_id>d864633a0fe44300481d3a7ce1050e87</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>knowledge</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_page_d864633a0fe44300481d3a7ce1050e87</sys_update_name>
+        <sys_updated_by>Herman.T</sys_updated_by>
+        <sys_updated_on>2017-08-23 04:22:31</sys_updated_on>
+        <title>Knowledge</title>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=d864633a0fe44300481d3a7ce1050e87"/>
+</record_update>

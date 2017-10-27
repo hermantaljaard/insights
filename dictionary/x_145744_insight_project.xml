@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Project" max_length="40" name="x_145744_insight_project" type="collection">
+        <element label="Client Name" mandatory="true" max_length="32" name="client_name" reference="x_145744_insight_customer" type="reference"/>
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Engagement Manager" max_length="32" name="engagement_manager" reference="sys_user" reference_cascade_rule="restrict" reference_qual="javascript: new Insight().getGroupMembers(gs.getProperty('x_145744_insight.insight.engagement_manager'));" type="reference" use_reference_qualifier="advanced"/>
+        <element default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
+        <element display="true" label="Short Description" mandatory="true" max_length="100" name="short_description" type="string"/>
+        <element choice="1" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element label="Planning" sequence="0" value="planning"/>
+                <element label="Development" sequence="1" value="development"/>
+                <element label="Testing" sequence="2" value="testing"/>
+                <element label="Deployed" sequence="3" value="deployed"/>
+            </choice>
+        </element>
+        <element label="Account" max_length="32" name="u_account" reference="sales_account" reference_cascade_rule="restrict" type="reference"/>
+        <element label="End date" max_length="40" name="u_prj_end_date" type="glide_date"/>
+        <element label="Start date" max_length="40" name="u_prj_start_date" type="glide_date"/>
+        <index name="index">
+            <element name="engagement_manager"/>
+        </index>
+        <index name="index2">
+            <element name="u_account"/>
+        </index>
+        <index name="index3">
+            <element name="client_name"/>
+        </index>
+    </element>
+</database>

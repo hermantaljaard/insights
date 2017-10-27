@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Insight Users Projects" max_length="40" name="x_145744_insight_m2m_users_projects" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Dates" max_length="1000" name="dates" type="simple_name_values"/>
+        <element default="javascript: current.projects.u_prj_end_date" label="End Date" mandatory="true" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Projects" mandatory="true" max_length="32" name="projects" reference="x_145744_insight_project" reference_cascade_rule="restrict" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Role" mandatory="true" max_length="100" name="role" type="string"/>
+        <element default="javascript: current.projects.u_prj_start_date" label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
+        <element label="User" mandatory="true" max_length="32" name="user" reference="sys_user" reference_cascade_rule="restrict" reference_qual="javascript: new Insight().getGroupMembers(gs.getProperty('x_145744_insight.insight.resource'));" type="reference" use_reference_qualifier="advanced"/>
+        <index name="index">
+            <element name="projects"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

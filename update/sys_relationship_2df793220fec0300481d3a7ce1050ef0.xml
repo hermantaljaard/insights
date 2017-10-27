@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>sales_account</basic_apply_to>
+        <basic_query_from>x_145744_insight_project</basic_query_from>
+        <insert_callback/>
+        <name>Projects</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	current.addQuery('u_account', parent.sys_id);
+
+})(current, parent);]]></query_with>
+        <reference_field>u_account</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>herman.t</sys_created_by>
+        <sys_created_on>2017-08-16 08:54:50</sys_created_on>
+        <sys_id>2df793220fec0300481d3a7ce1050ef0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Projects</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sys_relationship_2df793220fec0300481d3a7ce1050ef0</sys_update_name>
+        <sys_updated_by>herman.t</sys_updated_by>
+        <sys_updated_on>2017-08-16 09:03:02</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=2df793220fec0300481d3a7ce1050ef0"/>
+</record_update>

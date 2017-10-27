@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Team - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="teams">804e93360fe44300481d3a7ce1050e20</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>mayank.p</sys_created_by>
+        <sys_created_on>2017-08-24 01:26:31</sys_created_on>
+        <sys_id>725ef6c90f300300481d3a7ce1050e8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Team - Container 2</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_container_725ef6c90f300300481d3a7ce1050e8b</sys_update_name>
+        <sys_updated_by>mayank.p</sys_updated_by>
+        <sys_updated_on>2017-08-24 01:26:31</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

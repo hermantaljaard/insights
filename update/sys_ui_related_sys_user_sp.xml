@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="sys_user" version="2" view="sp">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - Service Portal" name="sys_user" related_list="NULL" sys_domain="global" view="ec2daaf9d7523100a9ad1e173e24d4ea">d0bb1eb40fb00300481d3a7ce1050e3e</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>sys_user_grmember.user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Herman.T</sys_created_by>
+            <sys_created_on>2017-08-23 04:16:37</sys_created_on>
+            <sys_id>58bb1eb40fb00300481d3a7ce1050e3e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Herman.T</sys_updated_by>
+            <sys_updated_on>2017-08-23 04:16:37</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - Service Portal" name="sys_user" related_list="NULL" sys_domain="global" view="ec2daaf9d7523100a9ad1e173e24d4ea">d0bb1eb40fb00300481d3a7ce1050e3e</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_145744_insight_m2m_users_skills.user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Herman.T</sys_created_by>
+            <sys_created_on>2017-08-23 04:16:37</sys_created_on>
+            <sys_id>5cbb1eb40fb00300481d3a7ce1050e3e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Herman.T</sys_updated_by>
+            <sys_updated_on>2017-08-23 04:16:37</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="User - Service Portal" name="sys_user" related_list="NULL" sys_domain="global" view="ec2daaf9d7523100a9ad1e173e24d4ea">d0bb1eb40fb00300481d3a7ce1050e3e</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>x_145744_insight_m2m_users_projects.user</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Herman.T</sys_created_by>
+            <sys_created_on>2017-08-23 04:16:37</sys_created_on>
+            <sys_id>50bb1eb40fb00300481d3a7ce1050e3f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Herman.T</sys_updated_by>
+            <sys_updated_on>2017-08-23 04:16:37</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>User - Service Portal</calculated_name>
+            <filter/>
+            <name>sys_user</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>Herman.T</sys_created_by>
+            <sys_created_on>2017-08-23 04:16:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d0bb1eb40fb00300481d3a7ce1050e3e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>User - Service Portal</sys_name>
+            <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+            <sys_update_name>sys_ui_related_sys_user_sp</sys_update_name>
+            <sys_updated_by>Herman.T</sys_updated_by>
+            <sys_updated_on>2017-08-23 04:16:37</sys_updated_on>
+            <sys_user/>
+            <view display_value="Service Portal" name="sp">ec2daaf9d7523100a9ad1e173e24d4ea</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

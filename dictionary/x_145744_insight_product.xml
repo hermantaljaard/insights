@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Product" max_length="40" name="x_145744_insight_product" type="collection">
+        <element label="Client Name" mandatory="true" max_length="32" name="client_name" reference="x_145744_insight_customer" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element dependent="client_name" dependent_on_field="client_name" label="Project" max_length="32" name="project" reference="x_145744_insight_project" type="reference" use_dependent_field="true"/>
+        <index name="index">
+            <element name="project"/>
+        </index>
+        <index name="index2">
+            <element name="client_name"/>
+        </index>
+    </element>
+</database>

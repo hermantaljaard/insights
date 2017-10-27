@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_css">
+    <sp_css action="INSERT_OR_UPDATE">
+        <css>.ft_container table { border-width: 0px; margin: 0px; border-collapse: collapse; margin: 0; outline-style: none; font-size: 0.9em; background-color: #fff; }&#13;
+&#13;
+.ft_container table tr th {	font-weight: bold; }&#13;
+&#13;
+.ft_container table thead { -moz-user-select: none;-webkit-user-select: none;}&#13;
+.ft_container table tr th, &#13;
+.ft_container table tr td { border-collapse: collapse; padding: 2px 4px; word-wrap: break-word; border: 1px solid #CCCCCC; border-top-width: 0px; border-left-width: 0px; border-right-width: 1px; border-bottom-width: 1px; overflow:hidden; word-wrap: break-word;}&#13;
+&#13;
+.ft_container table tr:first-child td,  &#13;
+.ft_container table tr:first-child th { border-top-width: 1px; border-color: #CCCCCC; }&#13;
+.ft_container table tr td:first-child,&#13;
+.ft_container table tr th:first-child { border-left-width: 1px; border-color: #CCCCCC; }&#13;
+&#13;
+.ft_container { overflow: hidden; padding: 0px; }&#13;
+&#13;
+.ft_rel_container { position: relative; overflow: hidden; border-width: 0px; width: 100%; height: 100%; }&#13;
+&#13;
+.ft_r, .ft_rc { background-image: none; }&#13;
+.ft_rc { position: absolute; z-index: 1005; }&#13;
+.ft_r, .ft_c { position: relative; }&#13;
+&#13;
+.ft_rwrapper, .ft_cwrapper { overflow: hidden; position: absolute; z-index: 1001; border-width: 0px;  padding: 0px; margin: 0px; }&#13;
+/*.ft_rwrapper { width: 100%; padding-right: 17px; }*/&#13;
+&#13;
+.ft_scroller { overflow: auto; height: 100%; padding: 0px; margin: 0px;}&#13;
+&#13;
+.ft_container tbody tr.ui-widget-content, thead.ui-widget-header { background-image: none; }&#13;
+&#13;
+.ft_container table.sorttable thead tr th { cursor: pointer; }&#13;
+.ft_container table thead tr th.fx_sort_bg{ background-image: url(images/bg.gif); background-position: right center; background-repeat: no-repeat; }&#13;
+.ft_container table thead tr th.fx_sort_asc{ background-image: url(images/asc.gif); }&#13;
+.ft_container table thead tr th.fx_sort_desc{ background-image: url(images/desc.gif); }&#13;
+</css>
+        <name>fixed_table_rc</name>
+        <sys_class_name>sp_css</sys_class_name>
+        <sys_created_by>Subhash.U</sys_created_by>
+        <sys_created_on>2017-09-11 11:01:50</sys_created_on>
+        <sys_id>839ea5470f094300481d3a7ce1050eea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>fixed_table_rc</sys_name>
+        <sys_package display_value="Insight" source="x_145744_insight">eb94f9120f240300481d3a7ce1050efc</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Insight">eb94f9120f240300481d3a7ce1050efc</sys_scope>
+        <sys_update_name>sp_css_839ea5470f094300481d3a7ce1050eea</sys_update_name>
+        <sys_updated_by>Subhash.U</sys_updated_by>
+        <sys_updated_on>2017-09-11 11:01:50</sys_updated_on>
+    </sp_css>
+</record_update>
